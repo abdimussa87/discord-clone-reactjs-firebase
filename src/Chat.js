@@ -10,6 +10,7 @@ import AddCircleRoundedIcon from '@material-ui/icons/AddCircleRounded';
 import RedeemRoundedIcon from '@material-ui/icons/RedeemRounded';
 import GifRoundedIcon from '@material-ui/icons/GifRounded';
 import EmojiEmotionsRoundedIcon from '@material-ui/icons/EmojiEmotionsRounded';
+import Message from './Message';
 function Chat() {
     return (
         <div className='chat'>
@@ -38,7 +39,9 @@ function Chat() {
 
             </div>
             <div className="chat__messages">
-
+                <Message />
+                <Message />
+                <Message />
             </div>
             <div className="chat__send">
                 <AddCircleRoundedIcon />
