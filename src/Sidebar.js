@@ -21,7 +21,7 @@ function Sidebar() {
 
 
     useEffect(() => {
-        db.collection('channels').onSnapshot(snapshot => {
+        db.collection('channels').orderBy('name', 'asc').onSnapshot(snapshot => {
             setChannels(snapshot.docs.map(doc => ({
                 id: doc.id,
                 channel: doc.data()
